@@ -6,7 +6,7 @@ Semana 12 - Taller Práctico
 
 Proyecto de la asignatura Programación Orientada a Objetos. Corresponde a la Semana 12: Utilización de colecciones para la mejora de rendimiento en restaurante_app.
 
-Estructura del proyecto
+### Estructura del proyecto
 
 restaurante_app/
 ├── datos/
