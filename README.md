@@ -8,6 +8,7 @@ Proyecto de la asignatura Programación Orientada a Objetos. Corresponde a la Se
 
 ### Estructura del proyecto
 
+```text
 restaurante_app/
 ├── datos/
 │   ├── productos.json
