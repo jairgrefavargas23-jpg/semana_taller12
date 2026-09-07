@@ -36,12 +36,15 @@ Mejoras de rendimiento aplicadas en la Semana 12
 
 Se conservan las listas principales (productos, usuarios, ventas) porque siguen siendo útiles para almacenar, recorrer, listar y persistir los objetos. Adicionalmente, dentro del servicio Restaurante se crearon las siguientes estructuras auxiliares en memoria:
 
+Se conservan las listas principales (productos, usuarios, ventas) porque siguen siendo útiles para almacenar, recorrer, listar y persistir los objetos. Adicionalmente, dentro del servicio Restaurante se crearon las siguientes estructuras auxiliares en memoria:
+
 | Estructura auxiliar | Tipo | Uso |
 | :--- | :--- | :--- |
-| `_index_productos` | dict | Índice por codigo de producto para búsquedas O(1). |
-| `_index_usuarios` | dict | Índice por identificacion de usuario para búsquedas O(1). |
-| `_index_ventas_usuario` | dict | Agrupa las ventas por identificación del usuario. Evita recorrer toda la lista de ventas al hacer una consulta. |
-| `_codigos_unicos` | set | Validación rápida (in) de existencia/unicidad de códigos. |
+| `_indice_productos` | `dict` | Índice por código de producto para búsquedas O(1). |
+| `_indice_usuarios` | `dict` | Índice por identificación de usuario para búsquedas O(1). |
+| `_ventas_por_usuario` | `dict` | Agrupa las ventas por identificación del usuario. Evita recorrer toda la lista de ventas al hacer una consulta. |
+| `_codigos_productos` | `set` | Validación rápida (in) de existencia/unicidad de códigos. |
+| `_identificaciones_usuarios` | `set` | Validación rápida (in) de existencia/unicidad de usuarios. |
 
 Búsquedas y consultas mejoradas
 
